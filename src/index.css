@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bolina";
+  src: url("./assets/fonts/Bolina.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BillaMount";
+  src: url("./assets/fonts/BillaMount-Regular.ttf")
+    format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
