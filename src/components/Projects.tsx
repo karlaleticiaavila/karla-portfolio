@@ -105,10 +105,10 @@ export default function Projects() {
               key={project.title}
               className="project-card group relative overflow-hidden rounded-[2rem] border border-[#eae3d5]/10 bg-white/[0.03] p-8 transition-colors duration-500 hover:border-[#eae3d5]/30 hover:bg-white/[0.06]">
               <img
-                src={project.image}
-                alt=""
-                className="absolute inset-0 h-full w-full object-cover opacity-0 blur-[2px] transition duration-700 group-hover:scale-105 group-hover:opacity-25"
-              />
+  src={project.image}
+  alt=""
+  className="absolute inset-0 h-full w-full object-cover opacity-20 blur-[2px] transition duration-700 md:opacity-0 md:group-hover:scale-105 md:group-hover:opacity-25"
+/>
 
               <div className="relative z-10 transition-transform duration-500 group-hover:-translate-y-1">
                 <div className="mb-10 flex items-center justify-between gap-4">
@@ -170,7 +170,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+              <div className="pointer-events-none absolute inset-0 opacity-100 transition-opacity duration-500 md:opacity-0 md:group-hover:opacity-100">
                 <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[#eae3d5]/10 blur-3xl" />
               </div>
             </article>
