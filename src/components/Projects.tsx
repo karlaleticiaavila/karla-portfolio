@@ -7,10 +7,21 @@ import upakutImg from "../assets/upakut.jpg";
 import modelImg from "../assets/model.jpg";
 import tacachondoImg from "../assets/tacachondo.jpg";
 import quizImg from "../assets/quiz.jpg";
+import tripAtlasImg from "../assets/trip-atlas.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
+  {
+  title: "Trip Atlas",
+  type: "Travel Budget App / Frontend Redesign",
+  description:
+    "A responsive travel budget and expense tracking app redesigned with a cinematic visual identity, onboarding flow, dashboard, trip detail pages, expense modal, and backend-ready UI for Google authentication and currency exchange integration.",
+  tech: ["React", "TypeScript", "Responsive UI", "UX Design"],
+  image: tripAtlasImg,
+  live: "https://trip-atlas.netlify.app/",
+  github: "AQUI_TU_LINK_DE_GITHUB",
+},
   {
     title: "Upakut / Manic",
     type: "In Progress / Clothing Brand Website",
