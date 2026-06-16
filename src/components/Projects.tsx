@@ -19,8 +19,8 @@ const projects = [
     "A responsive travel budget and expense tracking app redesigned with a cinematic visual identity, onboarding flow, dashboard, trip detail pages, expense modal, and backend-ready UI for Google authentication and currency exchange integration.",
   tech: ["React", "TypeScript", "Responsive UI", "UX Design"],
   image: tripAtlasImg,
-  live: "https://trip-atlas.netlify.app/",
-  github: "AQUI_TU_LINK_DE_GITHUB",
+  live: "https://trip-atlas-client.onrender.com",
+  github: "https://github.com/Cornerstone-CICCC/react-js-final-project-iconicteam",
 },
   {
     title: "Upakut / Manic",
