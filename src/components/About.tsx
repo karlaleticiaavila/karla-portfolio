@@ -14,13 +14,14 @@ export default function About() {
 
           <h2
             className="mb-10 text-[clamp(4rem,9vw,9rem)] leading-[0.8]"
-            style={{ fontFamily: "Bolina" }}
+            style={{ fontFamily: "BillaMount-Regular" }}
           >
             Karla
           </h2>
 
        <p className="mb-6 max-w-xl text-sm leading-7 text-white/70 md:text-base">
-  I don’t just build websites — I want to represent art within digital platforms
+  I don’t just build websites...
+  I want to represent art within digital platforms
   without letting them feel conventional or generic. My work is driven by
   aesthetics, intuition, and the intention to create something that actually
   feels different.
@@ -28,13 +29,13 @@ export default function About() {
 
 <p className="mb-6 max-w-xl text-sm leading-7 text-white/70 md:text-base">
   Coming from a background outside of tech, I approach development with a
-  different perspective — one that values visual identity as much as
+  different perspective one that values visual identity as much as
   functionality. I care about how things feel, not only how they work.
 </p>
 
 <p className="max-w-xl text-sm leading-7 text-white/70 md:text-base">
   My goal is to build experiences that stand out visually while remaining real
-  and functional — combining frontend precision with full-stack thinking.
+  and functional combining frontend precision with full-stack thinking.
 </p>
         </div>
 
