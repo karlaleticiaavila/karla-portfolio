@@ -1,3 +1,5 @@
+import aboutImage from '../assets/about.jpg';
+
 export default function About() {
   return (
     <section
@@ -46,7 +48,7 @@ export default function About() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url("/src/assets/about.jpg")`,
+              backgroundImage: `url(${aboutImage})`,
             }}
           />
 
