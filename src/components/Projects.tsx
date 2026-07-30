@@ -196,7 +196,7 @@ export default function Projects() {
       className="scroll-mt-24 bg-[#050505] px-6 py-24 pt-12 text-[#eae3d5] md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-14 flex flex-col md:mb-16 md:flex-row md:items-end md:justify-between">
+       <div className="mb-14 flex flex-col md:mb-16 md:flex-row md:items-end md:justify-between">
   <div>
     <h2
       className="text-[clamp(4rem,17vw,6rem)] leading-[0.72] md:text-[clamp(3rem,8vw,7rem)] md:leading-[0.85]"
@@ -206,7 +206,7 @@ export default function Projects() {
     </h2>
   </div>
 
-  <p className="mt-8 max-w-md text-sm leading-7 text-white/60 md:mt-0 md:text-base">
+  <p className="hidden max-w-md text-sm leading-7 text-white/60 md:block md:text-base">
     Selected work spanning full-stack product development, client delivery,
     digital infrastructure, creative direction, and interactive frontend
     experiences.
