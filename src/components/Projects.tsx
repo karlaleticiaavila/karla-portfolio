@@ -197,16 +197,16 @@ export default function Projects() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 flex flex-col md:mb-16 md:flex-row md:items-end md:justify-between">
-  <div className="relative">
+  <div>
     <h2
-      className="text-[clamp(4.5rem,20vw,7rem)] leading-[0.72] md:text-[clamp(3rem,8vw,7rem)] md:leading-[0.85]"
+      className="text-[clamp(4rem,17vw,6rem)] leading-[0.72] md:text-[clamp(3rem,8vw,7rem)] md:leading-[0.85]"
       style={{ fontFamily: "BillaMount" }}
     >
       Projects...
     </h2>
   </div>
 
-  <p className="-mt-2 max-w-md text-sm leading-7 text-white/60 md:mt-0 md:text-base">
+  <p className="mt-8 max-w-md text-sm leading-7 text-white/60 md:mt-0 md:text-base">
     Selected work spanning full-stack product development, client delivery,
     digital infrastructure, creative direction, and interactive frontend
     experiences.
