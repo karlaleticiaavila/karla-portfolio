@@ -198,10 +198,7 @@ export default function Projects() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between md:gap-6">
           <div>
-            <p className="mb-3 text-xs uppercase tracking-[0.45em] text-[#eae3d5]/50">
-              Selected Work
-            </p>
-
+            
             <h2
              className="mt-2 text-[clamp(3.4rem,15vw,7rem)] leading-[0.72] md:mt-0 md:leading-[0.85]"
               style={{ fontFamily: "BillaMount" }}
