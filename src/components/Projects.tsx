@@ -43,9 +43,8 @@ const projects: Project[] = [
     image: becomingImg,
     github: "https://github.com/karlaleticiaavila/ciccc-program-project",
 
-    // Add these when the project is deployed:
+    // Add this when the project is deployed:
     // live: "YOUR_LIVE_URL",
-    
   },
 
   {
@@ -132,7 +131,7 @@ const projects: Project[] = [
 
   {
     title: "Upakut / Manic",
-    type: "In Progress / Streetwear & Graffiti Website from New Zealand",
+    type: "In Progress / New Zealand Streetwear & Graffiti Website",
     description:
       "An evolving digital experience for a graffiti-driven clothing brand, focused on bold visual identity, artwork presentation, responsive gallery layouts, motion design, product storytelling, and future e-commerce functionality.",
     tech: [
@@ -228,10 +227,10 @@ export default function Projects() {
                 src={project.image}
                 alt={`${project.title} project preview`}
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover opacity-25 transition duration-700 md:opacity-0 md:blur-[2px] md:group-hover:scale-105 md:group-hover:opacity-25"
+                className="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 md:opacity-0 md:blur-[2px] md:group-hover:scale-105 md:group-hover:opacity-35"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-[#050505]/20 md:from-[#050505]/95 md:via-[#050505]/65 md:to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/95 via-[#050505]/50 to-transparent md:from-[#050505]/95 md:via-[#050505]/65 md:to-transparent" />
 
               <div className="relative z-10 flex w-full flex-col transition-transform duration-500 md:group-hover:-translate-y-1">
                 <div className="mb-10 flex items-start justify-between gap-4">
@@ -239,16 +238,16 @@ export default function Projects() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  <span className="max-w-[72%] rounded-full border border-[#eae3d5]/15 px-4 py-2 text-right text-[9px] uppercase leading-4 tracking-[0.18em] text-[#eae3d5]/60 sm:text-[10px] sm:tracking-[0.22em]">
+                  <span className="max-w-[72%] rounded-full border border-[#eae3d5]/15 bg-black/20 px-4 py-2 text-right text-[9px] uppercase leading-4 tracking-[0.18em] text-[#eae3d5]/70 backdrop-blur-sm sm:text-[10px] sm:tracking-[0.22em]">
                     {project.type}
                   </span>
                 </div>
 
-                <h3 className="mb-5 text-3xl font-medium tracking-tight md:text-4xl">
+                <h3 className="mb-5 text-3xl font-medium tracking-tight text-white drop-shadow-lg md:text-4xl">
                   {project.title}
                 </h3>
 
-                <p className="mb-8 max-w-xl text-sm leading-7 text-white/60">
+                <p className="mb-8 max-w-xl text-sm leading-7 text-white/75 drop-shadow-md">
                   {project.description}
                 </p>
 
@@ -256,7 +255,7 @@ export default function Projects() {
                   {project.tech.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-[#eae3d5]/5 bg-[#eae3d5]/10 px-3.5 py-2 text-[11px] text-[#eae3d5]/70"
+                      className="rounded-full border border-white/10 bg-black/35 px-3.5 py-2 text-[11px] text-[#eae3d5]/85 backdrop-blur-sm"
                     >
                       {item}
                     </span>
@@ -270,7 +269,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`View ${project.title} live website`}
-                      className="group/link relative flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-[#eae3d5]/60 transition-all duration-300 hover:text-[#eae3d5]"
+                      className="group/link relative flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-[#eae3d5]/75 transition-all duration-300 hover:text-white"
                     >
                       <FiExternalLink
                         size={14}
@@ -289,7 +288,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`View ${project.title} source code`}
-                      className="group/link relative flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-[#eae3d5]/60 transition-all duration-300 hover:text-[#eae3d5]"
+                      className="group/link relative flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-[#eae3d5]/75 transition-all duration-300 hover:text-white"
                     >
                       <FiGithub
                         size={14}
