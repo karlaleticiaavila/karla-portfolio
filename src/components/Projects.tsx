@@ -196,10 +196,10 @@ export default function Projects() {
       className="scroll-mt-24 bg-[#050505] px-6 py-24 pt-12 text-[#eae3d5] md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
-       <div className="mb-14 flex flex-col md:mb-16 md:flex-row md:items-end md:justify-between">
+       <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
   <div>
     <h2
-      className="text-[clamp(4rem,17vw,6rem)] leading-[0.72] md:text-[clamp(3rem,8vw,7rem)] md:leading-[0.85]"
+      className="text-[clamp(3rem,8vw,7rem)] leading-[0.85]"
       style={{ fontFamily: "BillaMount" }}
     >
       Projects...
