@@ -193,17 +193,17 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="scroll-mt-24 bg-[#050505] px-6 py-24 text-[#eae3d5] md:px-12"
+      className="scroll-mt-24 bg-[#050505] px-6 py-24 pt-12 text-[#eae3d5] md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between md:gap-6">
           <div>
             <p className="mb-3 text-xs uppercase tracking-[0.45em] text-[#eae3d5]/50">
               Selected Work
             </p>
 
             <h2
-              className="text-[clamp(3rem,8vw,7rem)] leading-[0.85]"
+             className="mt-2 text-[clamp(3.4rem,15vw,7rem)] leading-[0.72] md:mt-0 md:leading-[0.85]"
               style={{ fontFamily: "BillaMount" }}
             >
               Projects...
