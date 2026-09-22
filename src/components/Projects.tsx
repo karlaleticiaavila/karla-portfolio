@@ -15,6 +15,7 @@ import quizImg from "../assets/quiz.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 type Project = {
+  id: string;
   title: string;
   type: string;
   description: string;
@@ -26,6 +27,7 @@ type Project = {
 
 const projects: Project[] = [
   {
+    id: "becoming",
     title: "Who Are You Becoming?",
     type: "Full-Stack Application / Personal Growth Platform",
     description:
@@ -42,12 +44,11 @@ const projects: Project[] = [
     ],
     image: becomingImg,
     github: "https://github.com/karlaleticiaavila/ciccc-program-project",
-
-    // Add this when the project is deployed:
-    // live: "YOUR_LIVE_URL",
+     live: "https://who-are-you-becoming.vercel.app",
   },
 
   {
+    id: "joining-bridges",
     title: "Joining Bridges Canada Society",
     type: "Freelance Client Project / Digital Infrastructure",
     description:
@@ -67,6 +68,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "vancouver-fashion-week",
     title: "Vancouver Fashion Week",
     type: "Official Website / Frontend Contribution",
     description:
@@ -84,6 +86,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "trip-atlas",
     title: "Trip Atlas",
     type: "Travel Budget App / Frontend Redesign",
     description:
@@ -102,6 +105,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "tacachondo",
     title: "Tacachondo",
     type: "Concept Website / Street Food Brand Experience",
     description:
@@ -119,6 +123,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "model-portfolio",
     title: "Model Portfolio",
     type: "Personal Brand Website / Editorial Experience",
     description:
@@ -130,6 +135,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "upakut-manic",
     title: "Upakut / Manic",
     type: "In Progress / New Zealand Streetwear & Graffiti Website",
     description:
@@ -146,6 +152,7 @@ const projects: Project[] = [
   },
 
   {
+    id: "quiz-arena",
     title: "Quiz Arena",
     type: "Real-Time Multiplayer Game",
     description:
@@ -216,7 +223,7 @@ export default function Projects() {
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, index) => (
             <article
-              key={project.title}
+              key={project.id}
               className="project-card group relative flex min-h-[520px] overflow-hidden rounded-[2rem] border border-[#eae3d5]/10 bg-white/[0.03] p-7 transition-colors duration-500 hover:border-[#eae3d5]/30 hover:bg-white/[0.06] sm:p-8"
             >
               <img
