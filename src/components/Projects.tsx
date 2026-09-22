@@ -29,38 +29,44 @@ const projects: Project[] = [
   {
     id: "becoming",
     title: "Who Are You Becoming?",
-    type: "Full-Stack Application / Personal Growth Platform",
+    type: "Full-Stack Application / Career & Personal Growth Platform",
     description:
-      "An authenticated full-stack application that helps users document and visualize personal growth through milestones, achievements, and supporting evidence. The platform includes an interactive journey map, complete CRUD workflows, secure user-specific data management, Google authentication, and a refactored architecture designed for maintainability and future scalability.",
+      "A production-deployed full-stack platform for documenting and visualizing personal and professional growth through milestones, evidence, and interactive journeys. Built with authentication, CRUD workflows, MongoDB persistence, Cloudinary uploads, public/private visibility, mentor and recruiter experiences, React Flow visualization, and real-time functionality.",
     tech: [
       "Next.js",
       "React",
       "TypeScript",
       "Tailwind CSS",
+      "Node.js",
       "Express.js",
       "MongoDB",
+      "Mongoose",
       "Auth.js",
+      "Cloudinary",
       "React Flow",
+      "Socket.IO",
     ],
     image: becomingImg,
     github: "https://github.com/karlaleticiaavila/ciccc-program-project",
-     live: "https://who-are-you-becoming.vercel.app",
+    live: "https://who-are-you-becoming.vercel.app",
   },
 
   {
     id: "joining-bridges",
     title: "Joining Bridges Canada Society",
-    type: "Freelance Client Project / Digital Infrastructure",
+    type: "Freelance Client Project / React Website & Digital Infrastructure",
     description:
-      "Delivered a production-ready website and digital infrastructure solution for a Canadian nonprofit organization. The project included frontend implementation, deployment, domain and DNS configuration, Cloudflare, Google Workspace, professional email setup, donation and contact workflows, technical troubleshooting, client training, documentation, and post-launch support.",
+      "Inherited and shipped a production React website for a Canadian nonprofit, handling UI refinements, responsive QA, contact and donation workflows, deployment, domain configuration, Google Workspace, institutional email infrastructure, DNS, and client-facing troubleshooting through final delivery.",
     tech: [
-      "Wix Studio",
-      "HTML",
-      "CSS",
+      "React",
       "JavaScript",
+      "CSS",
+      "Responsive Design",
+      "Hostinger",
       "Cloudflare",
       "Google Workspace",
       "DNS",
+      "Zeffy",
       "Formspree",
     ],
     image: joiningBridgesImg,
@@ -72,7 +78,7 @@ const projects: Project[] = [
     title: "Vancouver Fashion Week",
     type: "Official Website / Frontend Contribution",
     description:
-      "Contributed to the official Vancouver Fashion Week website by designing and developing the About, Non-Profit, and Awards pages. My work included responsive layouts, custom interactive sections, timelines, testimonials, impact content, program information, award galleries, and visual implementation aligned with the organization’s brand identity.",
+      "Contributed to the official Vancouver Fashion Week website by developing and refining branded web sections, responsive layouts, timelines, testimonials, multimedia content, and interactive experiences based on creative and stakeholder direction.",
     tech: [
       "Wix",
       "HTML",
@@ -90,7 +96,7 @@ const projects: Project[] = [
     title: "Trip Atlas",
     type: "Travel Budget App / Frontend Redesign",
     description:
-      "A responsive travel budget and expense tracking application redesigned with a cinematic visual identity. The experience includes onboarding, dashboards, trip detail pages, expense management, and a backend-ready interface for Google authentication and currency exchange integration.",
+      "A responsive travel budget and expense tracking application with onboarding, dashboards, trip detail views, expense management, and a cinematic visual redesign created around usability and responsive product thinking.",
     tech: [
       "React",
       "TypeScript",
@@ -105,11 +111,23 @@ const projects: Project[] = [
   },
 
   {
+    id: "model-portfolio",
+    title: "Model Portfolio",
+    type: "Personal Brand Website / Editorial Experience",
+    description:
+      "An editorial modeling portfolio built around cinematic motion, responsive image presentation, personal branding, and a luxury-inspired digital experience for agencies, photographers, designers, and creative collaborators.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "GSAP"],
+    image: modelImg,
+    live: "https://www.karlathearcher.com/",
+    github: "https://github.com/karlaleticiaavila/karla-the-archer",
+  },
+
+  {
     id: "tacachondo",
     title: "Tacachondo",
     type: "Concept Website / Street Food Brand Experience",
     description:
-      "A responsive concept website for a Vancouver taco brand, combining Mexican street food with underground nightlife and rave-inspired art direction. The experience includes animated interactions, a cinematic video hero, responsive menu presentation, visual storytelling, and mobile-first ordering actions.",
+      "A responsive concept website for a Vancouver taco brand combining Mexican street food, underground nightlife, motion design, visual storytelling, and mobile-first ordering interactions.",
     tech: [
       "React",
       "TypeScript",
@@ -123,23 +141,11 @@ const projects: Project[] = [
   },
 
   {
-    id: "model-portfolio",
-    title: "Model Portfolio",
-    type: "Personal Brand Website / Editorial Experience",
-    description:
-      "An editorial modeling portfolio developed around a strong personal identity, cinematic motion, responsive image presentation, and a luxury-inspired visual experience designed for agencies, photographers, and creative collaborators.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "GSAP"],
-    image: modelImg,
-    live: "https://www.karlathearcher.com/",
-    github: "https://github.com/karlaleticiaavila/karla-the-archer",
-  },
-
-  {
     id: "upakut-manic",
     title: "Upakut / Manic",
     type: "In Progress / New Zealand Streetwear & Graffiti Website",
     description:
-      "An evolving digital experience for a graffiti-driven clothing brand, focused on bold visual identity, artwork presentation, responsive gallery layouts, motion design, product storytelling, and future e-commerce functionality.",
+      "An evolving digital experience for a graffiti-driven clothing brand focused on artwork presentation, responsive galleries, motion design, product storytelling, and future e-commerce functionality.",
     tech: [
       "React",
       "TypeScript",
@@ -156,7 +162,7 @@ const projects: Project[] = [
     title: "Quiz Arena",
     type: "Real-Time Multiplayer Game",
     description:
-      "A multiplayer quiz experience featuring team participation, live game updates, shared interactions, and real-time communication powered by WebSockets.",
+      "A multiplayer quiz experience featuring team participation, shared interactions, live game updates, and real-time communication powered by WebSockets.",
     tech: ["React", "Node.js", "Socket.IO", "Real-Time Systems"],
     image: quizImg,
     github:
@@ -188,7 +194,7 @@ export default function Projects() {
               start: "top 88%",
               once: true,
             },
-          },
+          }
         );
       });
     }, sectionRef);
@@ -203,22 +209,21 @@ export default function Projects() {
       className="scroll-mt-24 bg-[#050505] px-6 py-24 pt-12 text-[#eae3d5] md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
-       <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-  <div>
-    <h2
-      className="text-[clamp(3rem,8vw,7rem)] leading-[0.85]"
-      style={{ fontFamily: "BillaMount" }}
-    >
-      Projects...
-    </h2>
-  </div>
+        <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2
+              className="text-[clamp(3rem,8vw,7rem)] leading-[0.85]"
+              style={{ fontFamily: "BillaMount" }}
+            >
+              Projects...
+            </h2>
+          </div>
 
-  <p className="hidden max-w-md text-sm leading-7 text-white/60 md:block md:text-base">
-    Selected work spanning full-stack product development, client delivery,
-    digital infrastructure, creative direction, and interactive frontend
-    experiences.
-  </p>
-</div>
+          <p className="hidden max-w-md text-sm leading-7 text-white/60 md:block md:text-base">
+            Selected work across production web development, full-stack
+            applications, client delivery, and creative frontend experiences.
+          </p>
+        </div>
 
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, index) => (

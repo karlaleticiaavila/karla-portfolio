@@ -15,21 +15,23 @@ export default function Contact() {
         >
           Let’s build something real.
         </h2>
+
         <p className="mb-6 text-xs uppercase tracking-[0.4em] text-[#eae3d5]/40">
-  Open to opportunities
-</p>
+          Open to frontend & full-stack opportunities
+        </p>
 
-      <p className="mb-10 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
-  If you're looking for someone who can bring both visual direction and technical
-  execution into one space I’d love to collaborate.
-</p>
+        <p className="mb-10 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
+          I’m open to frontend, full-stack, and web development opportunities
+          where I can contribute across product thinking, responsive interfaces,
+          technical problem-solving, and production delivery.
+        </p>
 
-        <div className="flex flex-col gap-4 sm:flex-row">
+        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
           <a
             href="mailto:kbliaass@gmail.com"
             className="rounded-full bg-[#eae3d5] px-8 py-3 text-sm font-semibold uppercase tracking-widest text-black transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl"
           >
-            Email Me
+            Get In Touch
           </a>
 
           <a
@@ -39,6 +41,15 @@ export default function Contact() {
             className="rounded-full border border-[#eae3d5]/40 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-[#eae3d5] transition-all duration-300 hover:-translate-y-1 hover:border-[#eae3d5] hover:bg-[#eae3d5] hover:text-black"
           >
             LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/karlaleticiaavila"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-[#eae3d5]/40 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-[#eae3d5] transition-all duration-300 hover:-translate-y-1 hover:border-[#eae3d5] hover:bg-[#eae3d5] hover:text-black"
+          >
+            GitHub
           </a>
         </div>
       </div>

@@ -82,12 +82,12 @@ export default function Hero() {
         </h1>
 
         <p className="hero-copy mt-12 text-[12px] uppercase tracking-[0.35em] text-[#eae3d5]/80 md:text-sm">
-          Creative Web Developer & Model
+          Frontend / Full-Stack Developer
         </p>
 
         <p className="hero-copy mt-4 max-w-lg text-sm text-white/75 md:text-base">
-          I design and build expressive digital experiences with strong visuals,
-          clean interfaces, and real functionality.
+          I build production-ready web applications with React, Next.js and TypeScript,
+combining responsive interfaces, full-stack functionality, and real-world delivery.
         </p>
 
         <div className="hero-copy mt-8 flex flex-col gap-4 sm:flex-row">
@@ -95,14 +95,14 @@ export default function Hero() {
             href="#projects"
             className="rounded-full bg-[#eae3d5] px-8 py-3 text-sm font-semibold uppercase tracking-widest text-black transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl"
           >
-            View Work
+            View Projects
           </a>
 
           <a
             href="#contact"
             className="rounded-full border border-[#eae3d5]/40 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-[#eae3d5] transition-all duration-300 hover:-translate-y-1 hover:border-[#eae3d5] hover:bg-[#eae3d5] hover:text-black hover:shadow-xl"
           >
-            Contact
+            Contact Me
           </a>
         </div>
       </div>
